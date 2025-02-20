@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .box-wrapper{
+            border: 2px solid black;
+        }
+
+        .box1{
+            width:48%;
+            float:left;
+            background: #ccc;
+            padding:10px;
+        }
+        .box2{
+
+            width:48%;
+            float:right;
+            background: #ccc;
+            padding:10px;
+
+        }
+        .box-wrapper::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+      /*  @media(max-width:500px){
+
+        }
+
+        @media(min-width:501)and (max-width:768){
+
+        }
+
+        @media(min-width:769)and (max-width:1024){
+
+        }*/
+        @media(max-width:1024px){
+            .box1, .box2{
+                float: none;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box-wrapper">
+        <div class="box1">
+            <h1>debussy </h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis voluptatem, numquam architecto incidunt neque cupiditate perspiciatis.</p>
+
+        </div>
+        <div class="box2">
+            <h1>listz </h1>
+    <p>this is paragragh Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ratione ex enim odit!</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
